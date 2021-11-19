@@ -9,6 +9,19 @@ public class HydrogenSUV extends SUV {
         System.out.println("Type of vehicle: SUV");
         System.out.println("Type of engine: Hydrogen");
         color.getColor();
+        System.out.println(getDecorations());
         System.out.println("- - -");
+    }
+
+    public String getDecorations() {
+        //System.out.println("HydrogenSUV getDecorations()" +decorations); //DEBUG LINE
+        return decorations;
+    }
+    public float getPrice(){
+        return price;
+    }
+
+    public String getModel(){
+        return model;
     }
 }

@@ -100,24 +100,29 @@ public class Client {
 
     }
 
-//    public CarDecorator addAccessory(String accessory, Car car){
-//        if (accessory == null) {
-//            System.out.println("No addition specified, car object contains no accessories!");
-//            return null;
-//        }
-//        else if (accessory.equalsIgnoreCase("NAVIGATION")){
-//            System.out.println("Client addAccessory method");
-//            return new Navigation(car);
-//        }
-//        else if(accessory.equalsIgnoreCase("CRUISECONTROL")){
-//            return new Cruisecontrol(car);
-//        }
-//        else if(accessory.equalsIgnoreCase("AIRCO")){
-//            return new Airco(car);
-//        }
-//        return null;
-//    }
-//
+
+
+    public CarDecorator addAccessory(String accessory, Car car){
+        if (accessory == null) {
+            System.out.println("No addition specified, car object contains no accessories!");
+            return null;
+        }
+        else if (accessory.equalsIgnoreCase("NAVIGATION")){
+            //System.out.println("Client addAccessory method"); //DEBUG LINE
+            return new Navigation(car);
+        }
+        else if(accessory.equalsIgnoreCase("CRUISECONTROL")){
+            return new Cruisecontrol(car);
+        }
+        else if(accessory.equalsIgnoreCase("AIRCO")){
+            return new Airco(car);
+        }
+        return null;
+    }
+
+
+//TODO: Delete this part of code below if team agrees \/
+
 //    public Color addColor(String color, Car car){
 //        if (color == null) {
 //            System.out.println("No color specified, car object contains no color!");

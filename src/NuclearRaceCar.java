@@ -9,6 +9,20 @@ public class NuclearRaceCar extends RaceCar {
         System.out.println("Type of vehicle: Racecar");
         System.out.println("Type of engine: Nuclear");
         color.getColor();
+        System.out.println(getDecorations());
         System.out.println("- - -");
     }
+
+    public String getDecorations() {
+        //System.out.println("NuclearRaceCar getDecorations()"); //DEBUG LINE
+        return decorations;
+    }
+    public float getPrice(){
+        return price;
+    }
+
+    public String getModel(){
+        return model;
+    }
+
 }

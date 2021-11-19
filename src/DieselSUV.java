@@ -8,19 +8,21 @@ public class DieselSUV extends SUV{
         System.out.println("Type of vehicle: SUV");
         System.out.println("Type of engine: Diesel");
         color.getColor();
+        System.out.println(getDecorations());
         System.out.println("- - -");
     }
-//    public String getDecorations() {
-//        System.out.println("DieselSUV getDecorations()" +decorations);
-//        return decorations;
-//    }
-//    public float getPrice(){
-//        return price;
-//    }
-//
-//    public String getModel(){
-//        return model;
-//    }
+
+    public String getDecorations() {
+        //System.out.println("DieselSUV getDecorations()" +decorations); //DEBUG LINE
+        return decorations;
+    }
+    public float getPrice(){
+        return price;
+    }
+
+    public String getModel(){
+        return model;
+    }
 
 
 }

@@ -2,10 +2,10 @@ public abstract class SUV extends Car{
 
      public SUV(Color color){
          super(color);
-//         model = "SUV";
-//         price = 5000;
-//         decorations = "";
-         System.out.println("SUV constructor");
+         model = "SUV";
+         price = 5000;
+         decorations = "";
+         //System.out.println("SUV constructor"); //DEBUG LINE
      }
 
      @Override
@@ -17,32 +17,15 @@ public abstract class SUV extends Car{
          System.out.println("- - -");
      }
 
+     public String getModel(){
+         return model;
+     }
 
+     public float getPrice() {
+         return price;
+     }
 
-//
-//     public String getDecorations() {
-//         System.out.println("SUV getDecoration()");
-//         return decorations + carToDecorate.getDecorations();
-//     }
-//
-//     public String getModel(){
-//         return model;
-//     }
-//
-//     public float getPrice() {
-//         return price;
-//     }
-
-//    public String getDecorations(){
-//        System.out.println("5555" +decorations);
-//        return decorations;}
-//    public float getPrice(){
-//         return price;
-//     };
-//
-//    public String getModel(){
-//        return model;
-//    }
-
-
+    public String getDecorations(){
+        //System.out.println("SUV GetDecorations()" +decorations); //DEBUG LINE
+        return decorations;}
 }
