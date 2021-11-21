@@ -11,6 +11,7 @@ public class NuclearSUV extends SUV {
         System.out.println("Type of engine: Nuclear");
         color.getColor();
         System.out.println(getDecorations());
+        System.out.println("price:\n"+getPrice());
         System.out.println("- - -");
     }
 

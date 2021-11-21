@@ -9,6 +9,7 @@ public class DieselSUV extends SUV{
         System.out.println("Type of engine: Diesel");
         color.getColor();
         System.out.println(getDecorations());
+        System.out.println("price:\n"+getPrice());
         System.out.println("- - -");
     }
 

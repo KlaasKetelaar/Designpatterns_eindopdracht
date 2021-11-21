@@ -3,6 +3,7 @@ public class Airco extends CarDecorator{
         super(carToDecorate);
         price = 5000;
         carToDecorate.decorations = carToDecorate.decorations + "- Airco\n";
+        carToDecorate.price = + carToDecorate.price + price;
 //        this.carToDecorate = carToDecorate;
 //        model = this.carToDecorate.model;
     }

@@ -3,8 +3,8 @@ public class App {
     public static void main(String[] args) {
         Client gerrit = new Client();
 
-        gerrit.createDieselCar("SUV", "Karen"); //We create a Diesel car with type of SUV and name Karen
-        gerrit.addAccessory("AIRCO", gerrit.getCar("Karen")); //We add Airco to the options of the car Karen
+        gerrit.createNuclearCar("SUV", "Karen"); //We create a Diesel car with type of SUV and name Karen
+        gerrit.addAccessory("NAVIGATION", gerrit.getCar("Karen")); //We add Airco to the options of the car Karen
 
         gerrit.createDieselCar("RACECAR", "Caroline", new White()); //We create a Diesel car with type of SUV, name Caroline and color white
         gerrit.addAccessory("CRUISECONTROL",gerrit.getCar("Caroline")); //We add cruisecontrol to the racecar Caroline, so gerrit can cruise to victory
@@ -20,7 +20,6 @@ public class App {
         gerrit.addAccessory("NAVIGATION", gerrit.getCar("Max"));
         gerrit.addAccessory("CRUISECONTROL", gerrit.getCar("Max"));
         gerrit.addAccessory("AIRCO", gerrit.getCar("Max"));
-
 
         //we draw all the specifications of each of the following cars that our client Gerrit has ordered
         gerrit.getCar("Karen").draw();

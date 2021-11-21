@@ -22,7 +22,7 @@ public abstract class SUV extends Car{
      }
 
      public float getPrice() {
-         return price;
+         return price + carToDecorate.price;
      }
 
     public String getDecorations(){

@@ -13,6 +13,7 @@ public class Client {
         factory = new DieselFactory();
         if (cartype.equalsIgnoreCase("RACECAR")){
             carList.put(carName,factory.makeRaceCar(new Black()));
+
         }
         else if (cartype.equalsIgnoreCase("SUV")){
             carList.put(carName,factory.makeSUV(new Black()));
