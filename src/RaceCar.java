@@ -1,6 +1,6 @@
 public abstract class RaceCar extends Car {
 
-    public RaceCar(Color color){
+    public RaceCar(Color color){ //Constructor for the racecar
         super(color);
         model = "RaceCar";
         price = 10000;
@@ -9,7 +9,7 @@ public abstract class RaceCar extends Car {
     }
 
     @Override
-    public void draw(){
+    public void draw(){ // overrides the draw method in car
         System.out.println("- - -");
         System.out.println("Type of vehicle: Racecar");
         color.getColor();
@@ -18,7 +18,7 @@ public abstract class RaceCar extends Car {
 
     public float getPrice(){
         return price + carToDecorate.price;
-    }
+    } //Add the price of this vehicle
 
     public String getModel(){
         return model;

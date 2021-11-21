@@ -1,11 +1,8 @@
 public class Airco extends CarDecorator{
-    public Airco(Car carToDecorate){
-        super(carToDecorate);
-        carToDecorate.price = carToDecorate.price + 5000;
-        carToDecorate.decorations = carToDecorate.decorations + "- Airco\n";
-        carToDecorate.price = + carToDecorate.price + price;
-//        this.carToDecorate = carToDecorate;
-//        model = this.carToDecorate.model;
+    public Airco(Car carToDecorate){    //Constructor for the airco
+        super(carToDecorate);    //Overrides the constructor in carDecorator
+        carToDecorate.price = carToDecorate.price + 5000;   //Price of the airco increments the total price
+        carToDecorate.decorations = carToDecorate.decorations + "- Airco\n"; //The decoration is added to the list of decorations
     }
 
     @Override

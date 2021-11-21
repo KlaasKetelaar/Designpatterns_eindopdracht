@@ -3,14 +3,13 @@ public class DieselRaceCar extends RaceCar{
         super(color);
     }
 
-    public void draw(){
+    public void draw(){ //Prints out the vehicle with all the accessories and the price
         System.out.println("- - -");
         System.out.println("Type of vehicle: Racecar");
         System.out.println("Type of engine: Diesel");
         System.out.println("Price of vehicle: " + getPrice());
         color.getColor();
         System.out.println(getDecorations());
-        System.out.println("price:\n"+getPrice());
         System.out.println("- - -");
     }
 

@@ -11,7 +11,6 @@ public class NuclearRaceCar extends RaceCar {
         System.out.println("Price of vehicle: " + getPrice());
         color.getColor();
         System.out.println(getDecorations());
-        System.out.println("price:\n"+getPrice());
         System.out.println("- - -");
     }
 
