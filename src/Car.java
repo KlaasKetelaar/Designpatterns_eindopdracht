@@ -1,6 +1,6 @@
 public abstract class Car {
     public Car carToDecorate;
-    protected float price;
+    public float price;
     protected Color color;
     public String model;
     public String decorations;

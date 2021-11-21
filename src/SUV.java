@@ -12,7 +12,6 @@ public abstract class SUV extends Car{
     public void draw(){
          System.out.println("- - -");
          System.out.println("Type of vehicle: SUV");
-
          color.getColor();
          System.out.println("- - -");
      }
@@ -21,9 +20,9 @@ public abstract class SUV extends Car{
          return model;
      }
 
-     public float getPrice() {
-         return price + carToDecorate.price;
-     }
+    public float getPrice(){
+        return price + carToDecorate.price;
+    }
 
     public String getDecorations(){
         //System.out.println("SUV GetDecorations()" +decorations); //DEBUG LINE
