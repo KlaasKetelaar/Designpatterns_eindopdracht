@@ -7,6 +7,7 @@ public class DieselRaceCar extends RaceCar{
         System.out.println("- - -");
         System.out.println("Type of vehicle: Racecar");
         System.out.println("Type of engine: Diesel");
+        System.out.println("Price of vehicle: " + getPrice());
         color.getColor();
         System.out.println(getDecorations());
         System.out.println("- - -");

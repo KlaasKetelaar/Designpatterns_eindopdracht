@@ -17,7 +17,7 @@ public abstract class RaceCar extends Car {
     }
 
     public float getPrice(){
-        return price;
+        return price + carToDecorate.price;
     }
 
     public String getModel(){
